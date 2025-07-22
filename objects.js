@@ -38,3 +38,24 @@ const {mother, father, siblings:{first: Racheal, second: Jayne}} = family ;
 //console.log(mother, father, first, second) ;
 
 console.log(Racheal, Jayne) ;
+
+
+let user = {
+  email: "user@email.com",
+  password: "1234",
+
+  login: function login(email, password){
+    const {email: UserEmail, password: UserPassword} = user ;
+    if(email !== UserEmail){
+       console.log('Wrong Email');
+    }
+    else if(password !== UserPassword){
+       console.log('Wrong password')
+    }
+    else{
+      console.log('Welcome back') ;
+    }
+  }
+}
+
+user.login('user@email.com', '1234') ;
